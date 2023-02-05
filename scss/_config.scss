@@ -1,0 +1,19 @@
+$primary-color: #272727;
+$secondary-color: #9146fe;
+$white-color: #f2f2f2;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@mixin transition-ease($property: all) {
+  transition: $property 0.3s ease-in-out;
+}
+@function set-text-color($color) {
+  @if (lightness($color) > 40%) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
