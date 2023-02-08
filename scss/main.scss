@@ -2,6 +2,9 @@
 @import "./config";
 @import "./home";
 @import "./menu";
+@import "./about";
+@import "./projects";
+
 body {
   background-color: $primary-color;
   color: $white-color;
@@ -37,6 +40,10 @@ main {
       }
     }
   }
+}
+
+.text-secondary {
+  color: $secondary-color;
 }
 
 footer {
